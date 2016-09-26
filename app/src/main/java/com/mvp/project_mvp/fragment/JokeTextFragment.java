@@ -11,7 +11,7 @@ import com.mvp.project_mvp.adapter.BaseRecyclerViewAdapter;
 import com.mvp.project_mvp.adapter.JokeTextAdapter;
 import com.mvp.project_mvp.constant.Constant;
 import com.mvp.project_mvp.mvp.bean.JokeTextBean;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.JokeTextPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.ActivityUtils;
@@ -33,7 +33,7 @@ public class JokeTextFragment extends BaseFragment implements SwipeRefreshLayout
     private boolean isPrepared;
     private boolean isLoad;
 
-    private BasePresenter.JokeTextPresenter jokePresenter;
+    private BasePresenter1.JokeTextPresenter jokePresenter;
     private JokeTextAdapter adapter;
 
 

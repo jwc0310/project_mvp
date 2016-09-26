@@ -19,7 +19,7 @@ import java.util.List;
  * by y on 2016/4/29.
  */
 public class ImageDetailPresenterImpl extends BasePresenterImpl<BaseView.ImageDetailView>
-        implements BasePresenter.ImageDetailPresenter, BaseDataBridge.ImageDetailData {
+        implements BasePresenter1.ImageDetailPresenter, BaseDataBridge.ImageDetailData {
 
     private final BaseModel.ImageDetailModel imageDetailModel;
 

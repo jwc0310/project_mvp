@@ -12,7 +12,7 @@ import java.util.List;
  * by 12406 on 2016/5/14.
  */
 public class TabNewsPresenterImpl extends BasePresenterImpl<BaseView.TabNewsView>
-        implements BasePresenter.TabNewsPresenter, BaseDataBridge.TabNewsData {
+        implements BasePresenter1.TabNewsPresenter, BaseDataBridge.TabNewsData {
 
 
     private final BaseModel.TabNewsModel tabNewsModel;
@@ -21,7 +21,6 @@ public class TabNewsPresenterImpl extends BasePresenterImpl<BaseView.TabNewsView
         super(view);
         this.tabNewsModel = new TabNewsModelImpl();
     }
-
 
     @Override
     public void requestNetWork() {

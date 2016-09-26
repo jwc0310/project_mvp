@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import com.mvp.project_mvp.R;
 import com.mvp.project_mvp.mvp.bean.NewsDetailInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.NewsDetailPresenterImpl;
 import com.mvp.project_mvp.mvp.presenter.ToolBarItemPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
@@ -48,7 +48,7 @@ public class NewsDetailActivity extends BaseActivity
 
     private int id;
     private String message;
-    private BasePresenter.ToolBarItemPresenter toolBarItemPresenter;
+    private BasePresenter1.ToolBarItemPresenter toolBarItemPresenter;
 
 
     public static void startIntent(int id) {
@@ -66,7 +66,7 @@ public class NewsDetailActivity extends BaseActivity
     }
 
     private void init() {
-        BasePresenter.NewsDetailPresenter newsDetailPresenter = new NewsDetailPresenterImpl(this);
+        BasePresenter1.NewsDetailPresenter newsDetailPresenter = new NewsDetailPresenterImpl(this);
         toolBarItemPresenter = new ToolBarItemPresenterImpl(this);
         newsDetailPresenter.requestNetWork(id);
 

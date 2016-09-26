@@ -9,7 +9,7 @@ import com.mvp.project_mvp.R;
 import com.mvp.project_mvp.adapter.JokePicAdapter;
 import com.mvp.project_mvp.constant.Constant;
 import com.mvp.project_mvp.mvp.bean.JokePicBean;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.JokePicPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.UIUtils;
@@ -31,7 +31,7 @@ public class JokePicFragment extends BaseFragment
     private boolean isPrepared;
     private boolean isLoad;
 
-    private BasePresenter.JokePicPresenter jokePresenter;
+    private BasePresenter1.JokePicPresenter jokePresenter;
     private JokePicAdapter adapter;
 
 

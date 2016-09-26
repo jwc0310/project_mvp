@@ -13,7 +13,7 @@ import java.util.List;
  * by y on 2016/4/29.
  */
 public class ImageListPresenterImpl extends BasePresenterImpl<BaseView.ImageListView>
-        implements BasePresenter.ImageListPresenter, BaseDataBridge.ImageListData {
+        implements BasePresenter1.ImageListPresenter, BaseDataBridge.ImageListData {
 
     private final BaseModel.ImageListModel imageListModel;
 

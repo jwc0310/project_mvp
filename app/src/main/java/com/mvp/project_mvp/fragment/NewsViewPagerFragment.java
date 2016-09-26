@@ -7,7 +7,7 @@ import android.view.View;
 import com.mvp.project_mvp.R;
 import com.mvp.project_mvp.adapter.TabNewsAdapter;
 import com.mvp.project_mvp.mvp.bean.TabNewsInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.TabNewsPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.UIUtils;
@@ -40,7 +40,7 @@ public class NewsViewPagerFragment extends BaseFragment implements BaseView.TabN
     @Override
     protected void initData() {
 
-        BasePresenter.TabNewsPresenter tabNewsPresenter = new TabNewsPresenterImpl(this);
+        BasePresenter1.TabNewsPresenter tabNewsPresenter = new TabNewsPresenterImpl(this);
         tabNewsPresenter.requestNetWork();
 
         data = new LinkedList<>();

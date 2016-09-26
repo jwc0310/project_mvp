@@ -12,7 +12,7 @@ import java.util.List;
  * by y on 2016/4/29.
  */
 public class TabNamePresenterImpl extends BasePresenterImpl<BaseView.TabNameView>
-        implements BasePresenter.TabNamePresenter, BaseDataBridge.TabNameData {
+        implements BasePresenter1.TabNamePresenter, BaseDataBridge.TabNameData {
 
     private final BaseModel.TabNameModel tabNameModel;
 

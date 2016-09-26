@@ -13,7 +13,7 @@ import java.util.List;
  * by 12406 on 2016/5/15.
  */
 public class NewsListPresenterImpl extends BasePresenterImpl<BaseView.NewsListView>
-        implements BasePresenter.NewsListPresenter, BaseDataBridge.NewsListData {
+        implements BasePresenter1.NewsListPresenter, BaseDataBridge.NewsListData {
 
     private final BaseModel.NewsListModel newsListModel;
 

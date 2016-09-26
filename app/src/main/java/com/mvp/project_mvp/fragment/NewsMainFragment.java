@@ -12,7 +12,7 @@ import com.mvp.project_mvp.adapter.BaseRecyclerViewAdapter;
 import com.mvp.project_mvp.adapter.NewsListAdapter;
 import com.mvp.project_mvp.constant.Constant;
 import com.mvp.project_mvp.mvp.bean.NewsListInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.NewsListPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.UIUtils;
@@ -34,7 +34,7 @@ public class NewsMainFragment extends BaseFragment implements SwipeRefreshLayout
     private boolean isLoad;
 
     private NewsListAdapter adapter;
-    private BasePresenter.NewsListPresenter newsListPresenter;
+    private BasePresenter1.NewsListPresenter newsListPresenter;
 
     public static Fragment newInstance(int index) {
         Bundle bundle = new Bundle();

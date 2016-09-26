@@ -11,7 +11,7 @@ import com.mvp.project_mvp.adapter.BaseRecyclerViewAdapter;
 import com.mvp.project_mvp.adapter.ImageNewAdapter;
 import com.mvp.project_mvp.constant.Constant;
 import com.mvp.project_mvp.mvp.bean.ImageNewInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.ImageNewPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.UIUtils;
@@ -44,7 +44,7 @@ public class ImageNewFragment extends BaseFragment implements BaseView.ImageNewV
     SwipeRefreshLayout srfLayout;
 
     private ImageNewAdapter adapter;
-    private BasePresenter.ImageNewPresenter imageNewPresenter;
+    private BasePresenter1.ImageNewPresenter imageNewPresenter;
 
 
     @SuppressWarnings("unused")

@@ -12,7 +12,7 @@ import java.util.List;
  * by y on 2016/5/30.
  */
 public class JokePicPresenterImpl extends BasePresenterImpl<BaseView.JokePicView>
-        implements BasePresenter.JokePicPresenter, BaseDataBridge.JokePicList {
+        implements BasePresenter1.JokePicPresenter, BaseDataBridge.JokePicList {
 
     private final BaseModel.JokePicListModel jokePicListModel;
 

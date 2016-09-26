@@ -24,6 +24,7 @@
 
         <activity android:name=".activity.ImageDetailActivity" />
         <activity android:name=".activity.NewsDetailActivity" />
+        <activity android:name=".mvp.view.WeatherActivity" />
     </application>
 
 </manifest>

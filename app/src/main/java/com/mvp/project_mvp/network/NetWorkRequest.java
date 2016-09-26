@@ -4,10 +4,13 @@ import com.mvp.project_mvp.mvp.bean.BaseBean;
 import com.mvp.project_mvp.mvp.bean.JokePicBean;
 import com.mvp.project_mvp.mvp.bean.JokeTextBean;
 import com.mvp.project_mvp.mvp.bean.NewsDetailInfo;
+import com.mvp.project_mvp.mvp.bean.TabNewsInfo;
+import com.mvp.project_mvp.utils.LogUtils;
 import com.mvp.project_mvp.utils.RxUtils;
 
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
 import rx.schedulers.Schedulers;
 
 /**

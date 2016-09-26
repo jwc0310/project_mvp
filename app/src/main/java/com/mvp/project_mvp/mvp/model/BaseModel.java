@@ -5,7 +5,6 @@ package com.mvp.project_mvp.mvp.model;
  */
 public interface BaseModel<T> {
 
-
     void netWork(T model);
 
     interface TabNewsModel extends BaseModel<BaseDataBridge.TabNewsData> {

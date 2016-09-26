@@ -18,7 +18,7 @@ import java.util.List;
  * by y on 2016/4/29.
  */
 public class ImageNewPresenterImpl extends BasePresenterImpl<BaseView.ImageNewView>
-        implements BasePresenter.ImageNewPresenter, BaseDataBridge.ImageNewData {
+        implements BasePresenter1.ImageNewPresenter, BaseDataBridge.ImageNewData {
 
     private final BaseModel.ImageNewModel imageNewModel;
 

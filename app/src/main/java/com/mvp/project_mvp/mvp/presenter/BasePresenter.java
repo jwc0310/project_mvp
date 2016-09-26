@@ -1,68 +1,29 @@
 package com.mvp.project_mvp.mvp.presenter;
 
-import com.mvp.project_mvp.mvp.bean.ImageListInfo;
-import com.mvp.project_mvp.mvp.bean.ImageNewInfo;
-import com.mvp.project_mvp.mvp.bean.NewsListInfo;
+import rx.Subscription;
+import rx.subscriptions.CompositeSubscription;
 
 /**
- * by y on 2016/5/27.
+ *
+ * Created by Administrator on 2016/9/26.
  */
-@SuppressWarnings("ALL")
-public interface BasePresenter {
+public class BasePresenter {
 
+    protected CompositeSubscription compositeSubscription;
 
-    interface ImageDetailPresenter {
-        void requestNetWork(int id);
-
-        void competence(int requestCode, int[] grantResults);
+    //Rxjava取消注册,以避免内存泄露
+    public void onUnsubscribe() {
+        if (compositeSubscription != null && compositeSubscription.hasSubscriptions()) {
+            compositeSubscription.unsubscribe();
+        }
     }
 
-    interface ImageListPresenter {
-        void requestNetWork(int id, int page, boolean isNull);
-
-        void onClick(ImageListInfo info);
+    //Rxjava注册
+    public void addSubscription(Subscription subscripter){
+        if (compositeSubscription == null){
+            compositeSubscription = new CompositeSubscription();
+        }
+        compositeSubscription.add(subscripter);
     }
-
-    interface ImageNewPresenter {
-        void requestNetWork(String id, String rows);
-
-        void onClick(ImageNewInfo info);
-    }
-
-    interface MainViewPresenter {
-        void switchId(int id);
-    }
-
-    interface ToolBarItemPresenter {
-        void switchId(int id);
-    }
-
-
-    interface NewsListPresenter {
-        void requestNetWork(int id, int page, boolean isNull);
-
-        void onClick(NewsListInfo info);
-    }
-
-    interface NewsDetailPresenter {
-        void requestNetWork(int id);
-    }
-
-    interface TabNamePresenter {
-        void requestNetWork();
-    }
-
-    interface TabNewsPresenter {
-        void requestNetWork();
-    }
-
-    interface JokeTextPresenter {
-        void requestNetWork(int page, boolean isNull);
-    }
-
-    interface JokePicPresenter {
-        void requestNetWork(int page, boolean isNull);
-    }
-
 
 }

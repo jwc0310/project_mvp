@@ -7,7 +7,7 @@ import com.mvp.project_mvp.mvp.view.BaseView;
  * by 12406 on 2016/5/1.
  */
 public class MainViewPresenterImpl extends BasePresenterImpl<BaseView.MainView>
-        implements BasePresenter.MainViewPresenter {
+        implements BasePresenter1.MainViewPresenter {
 
 
     public MainViewPresenterImpl(BaseView.MainView view) {

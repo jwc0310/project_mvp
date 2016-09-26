@@ -10,7 +10,7 @@ import com.mvp.project_mvp.mvp.view.BaseView;
  * by 12406 on 2016/5/30.
  */
 public class NewsDetailPresenterImpl extends BasePresenterImpl<BaseView.NewsDetailView>
-        implements BasePresenter.NewsDetailPresenter, BaseDataBridge.NewsDetailData {
+        implements BasePresenter1.NewsDetailPresenter, BaseDataBridge.NewsDetailData {
 
     private final BaseModel.NewsDetailModel newsDetailModel;
 

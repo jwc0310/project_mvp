@@ -7,7 +7,7 @@ import com.mvp.project_mvp.mvp.view.BaseView;
  * by y on 2016/6/12.
  */
 public class ToolBarItemPresenterImpl extends BasePresenterImpl<BaseView.ToolBarItemView>
-        implements BasePresenter.ToolBarItemPresenter {
+        implements BasePresenter1.ToolBarItemPresenter {
 
     public ToolBarItemPresenterImpl(BaseView.ToolBarItemView view) {
         super(view);

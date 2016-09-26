@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import com.mvp.project_mvp.R;
 import com.mvp.project_mvp.adapter.ImageDetailAdapter;
 import com.mvp.project_mvp.mvp.bean.ImageDetailInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.ImageDetailPresenterImpl;
 import com.mvp.project_mvp.mvp.presenter.ToolBarItemPresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
@@ -43,8 +43,8 @@ public class ImageDetailActivity extends BaseActivity
     private int id;
     private int pos;
     private LinkedList<ImageDetailInfo> list;
-    private BasePresenter.ImageDetailPresenter imageDetailPresenter;
-    private BasePresenter.ToolBarItemPresenter toolBarItemPresenter;
+    private BasePresenter1.ImageDetailPresenter imageDetailPresenter;
+    private BasePresenter1.ToolBarItemPresenter toolBarItemPresenter;
     private ImageDetailAdapter bigImageAdapter;
 
 

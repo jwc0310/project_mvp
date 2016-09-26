@@ -8,7 +8,7 @@ import android.view.View;
 import com.mvp.project_mvp.R;
 import com.mvp.project_mvp.adapter.TabNameAdapter;
 import com.mvp.project_mvp.mvp.bean.TabNameInfo;
-import com.mvp.project_mvp.mvp.presenter.BasePresenter;
+import com.mvp.project_mvp.mvp.presenter.BasePresenter1;
 import com.mvp.project_mvp.mvp.presenter.TabNamePresenterImpl;
 import com.mvp.project_mvp.mvp.view.BaseView;
 import com.mvp.project_mvp.utils.UIUtils;
@@ -42,7 +42,7 @@ public class ImageViewPagerFragment extends BaseFragment implements BaseView.Tab
     public void initData() {
 
 
-        BasePresenter.TabNamePresenter tabNamePresenter = new TabNamePresenterImpl(this);
+        BasePresenter1.TabNamePresenter tabNamePresenter = new TabNamePresenterImpl(this);
         tabNamePresenter.requestNetWork();
 
         data = new LinkedList<>();
